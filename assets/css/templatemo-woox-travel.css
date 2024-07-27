@@ -1954,9 +1954,9 @@ Deals Page Style
 .amazing-deals .item h4 {
   font-size: 20px;
   font-weight: 700;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
 }
 
 .amazing-deals .item i {
@@ -1975,9 +1975,9 @@ Deals Page Style
 }
 
 .amazing-deals .item p {
-  padding-top: 25px;
+  padding-top: 10px;
   margin-top: 10px;
-  border-top: 1px solid #ddd;
+  
   margin-bottom: 30px;
 }
 
