@@ -1927,8 +1927,78 @@ Deals Page Style
   color: #22b3c1;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-heading {
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 1s forwards; 
+  animation-delay: 1s; 
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.item .image img {
+  transition: transform 0.3s ease;
+}
+
+.item:hover .image img {
+  transform: scale(1.1); 
+}
+
+.item.show {
+  animation: fadeInUp 2s forwards;
+}
+
+.section-heading h2 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-heading h2:hover {
+  color: #22b3c1;
+  transform: scale(1.1); 
+}
+
+.section-heading p {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
 .amazing-deals {
   margin-top: 120px;
+}
+
+.amazing-deals .item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.amazing-deals .item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.amazing-deals .main-button a {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .amazing-deals .item .image {
